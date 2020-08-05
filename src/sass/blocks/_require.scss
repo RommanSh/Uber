@@ -1,0 +1,56 @@
+.require {
+    padding: 68px 0 84px 0;
+	&_block {
+        margin: 33px 0;
+		&_nmb {
+            margin-bottom: 0px;
+        }	
+    }
+	&_title {
+        color: #1ca8c3;
+		font-size: 22px;
+		font-weight: 400;
+    }
+	&_list {
+        list-style-type: none;
+		padding-left: 50px;
+        margin-top: 22px;
+        li {
+            position: relative;
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 24px;
+			margin-bottom: 10px;
+			&:before{
+                content: '';
+				display: block;
+				position: absolute;
+				left: -33px;
+				top: 3px;
+				width: 21px;
+				height: 20px;
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat;
+            }
+        }
+    }
+	&_descr {
+        margin-top: 25px;
+		font-style: 17px;
+		font-weight: 300;
+		line-height: 24px;
+		color: #1ca8c3;
+    }
+	.warning {
+        .require_title{
+            color: $second-color;
+        }
+		.require_list {
+            li {
+                &:before {
+                    background: url('../icons/check_red.svg') center (center / cover) no-repeat;
+                }
+            }
+        }
+    }
+}
+	

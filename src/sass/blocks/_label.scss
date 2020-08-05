@@ -1,0 +1,22 @@
+.label {
+    position: relative;
+	margin: 0 auto;
+	height: 24px;
+	width: 112px;
+	padding: 5px 12px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 2;
+	&_white {
+        background-color: #fff;
+		color: #000;
+    }
+	&_min{
+        width: 76px;
+    }	
+}
+	

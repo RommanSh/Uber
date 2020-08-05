@@ -1,0 +1,16 @@
+.title {
+    position: relative;
+	margin-bottom: 0;
+	margin-top: 38px;
+	color: #222222;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 2;
+	&_white {
+        color: #fff;
+    }
+}
+	
