@@ -17,8 +17,8 @@
 					<li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
 					<li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
 					<li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
-					<li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
-					<li class="menu_item"><a href="#require" class="menu_link">Контакты</a></li>
+					<li class="menu_item"><a href="#require" class="menu_link">Требования</a></li>
+					<li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
 					<li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
 				</ul>
 			</div>
@@ -41,7 +41,7 @@
 					</div>
 					<div class="col-6 col-md-3 col-lg-2">
 						<a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
-						<button class="button">заказать звонок</button>
+						<button data-modal="consultation" class="button">заказать звонок</button>
 					</div>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у нас
 						зарабатывают от 80000- 120000 в месяц.
 					</div>
-					<button class="button button_big">ОТПРАВИТЬ ЗАЯВКУ!</button>
+					<button data-modal="consultation" class="button button_big">ОТПРАВИТЬ ЗАЯВКУ!</button>
 				</div>
 			</div>
 		</div>
@@ -391,8 +391,31 @@
 				</div>
 			</div>
 		</div>
-	   </footer>
+	</footer>
 
-	   <script src="js/script.js"></script>
+	<!-- Modal  -->
+
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+			<form class="feed-form feed-form_mt25" action="#">
+				<input name="name" placeholder="Ваше имя" type="text">
+				<input name="phone" placeholder="Ваш телефон">
+				<input name="email" placeholder="Ваш E-mail" type="email">
+
+			<button class="button button_subbmit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+			</form>
+		</div>
+
+		<div class="modal modal_mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -401,4 +401,12 @@
             }
         }
     }
+    .modal {
+		padding: 38px 20px 40px 20px;
+		width: 320px;
+		&__close {
+			top: 10px;
+        	right: 10px;
+		}
+	}
 }
